@@ -53,9 +53,9 @@ flowchart LR
 
   subgraph Gateway[Pilot HTTP Gateway]
     H[HTTP Server<br/>CORS/BodyLimit/Timeout]
-    R[Dynamic Router<br/>(Radix Tree)]
-    P[Service Pool<br/>(Round Robin)]
-    T[Transcoder<br/>(google.api.http)]
+    R[Dynamic Router<br/>Radix Tree]
+    P[Service Pool<br/>Round Robin]
+    T[Transcoder<br/>google.api.http]
     W[Watcher]
   end
 
