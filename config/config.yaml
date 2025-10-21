@@ -1,0 +1,14 @@
+# HTTP server configuration
+http:
+  addr: ":8080"              # HTTP server listen address
+  read_timeout: 30s          # Read timeout
+  write_timeout: 30s         # Write timeout
+  max_header_bytes: 5142880  # 5MB
+
+# Etcd configuration
+etcd:
+  endpoints:                 # Etcd endpoints
+    - "host.docker.internal:2379"
+  dial_timeout: 5s           # Dial timeout
+  service_metadata_prefix: "sample/metadata/" # Service registration prefix
+  server_discovery_prefix: "sample/discover/"

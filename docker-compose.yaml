@@ -1,0 +1,10 @@
+services:
+  pilot:
+    image: pilot:latest
+    ports:
+      - "8080:8080"
+    networks:
+      - pilot-gateway
+networks:
+  pilot-gateway:
+    external: true
